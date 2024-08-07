@@ -1,0 +1,865 @@
+.aadhouter {
+  display: flex;
+  justify-content: center; 
+  max-width: 70%;
+  margin: 70px auto; 
+  left:50%; 
+  transform: translateX(04%); 
+  margin-bottom:250px; 
+  margin-top:180px;
+ align-items:center;
+ text-align: center;
+}
+
+/*
+.aadhcontainer {
+  max-width: 60%;
+  padding: 20px;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow:none;
+  position: relative;
+  overflow-y: auto;
+  z-index: 1;
+}
+*/
+.aadhcontainer form {
+  margin-bottom: 20px;
+  max-width: 60%;
+  padding: 20px;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow:none;
+  position: relative;
+  overflow-y: auto;
+  z-index: 1;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.aadhcontainer input[type="text"],
+.aadhcontainer button {
+  text-align: center;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.aadhcontainer button[type="submit"].generate-otp-button { 
+  background-color:black; 
+  width: 70%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aadhcontainer button[type="submit"].generate-otp-button:disabled { 
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.aadhcontainer button[type="submit"].generate-otp-button:hover { 
+  background-color:#FFD966;
+  color:#171717;
+}
+
+
+.aadhcontainer button.submit-otp-button { 
+  background-color:black; 
+  color: #fff;
+  cursor: pointer;
+}
+.aadhcontainer button.submit-otp-button:hover { 
+  background-color:#FFD966;
+  color:#171717;
+  cursor: pointer;
+}
+
+.aadhcontainer button.submit-otp-button:disabled {
+  background-color:black;
+  cursor: not-allowed;
+}
+
+.aadhcontainer .error {
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+.aadhcontainer h2 {
+  font-size: 16px;
+  margin-bottom:15px;
+  color: black;
+}
+
+#aadhaarbox
+{
+  max-width: 60%;
+  padding: 20px;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow:none;
+  position: relative;
+  overflow-y: auto;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-29px;
+}
+
+
+#aadhaarverify{
+  background-color:white;
+  padding-top:3%;
+  max-width:90%;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+
+.aadhcontainer table {
+  max-width:90%;
+
+  margin-right:auto;
+  margin-left:auto;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.aadhcontainer table td {
+  padding: 12px;
+  border:none;
+  text-align: left;
+}
+
+.aadhcontainer table td:first-child {
+  font-weight: bold;
+  color:black;
+  width: 30%;
+  background-color:#CCCCCC; 
+  text-align: left;
+}
+
+
+.download-pdf-button {
+  margin-top:14px;
+  background-color: #28a745; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.download-pdf-button:hover {
+  background-color: #218838;
+}
+
+
+.headingaadh{
+  color: black;
+  font-size:24px;
+  font-weight: bold;
+}
+.descriptionaadh p {
+ 
+  line-height:1.2;
+}
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid rgba(145, 25, 25, 0.1);
+  border-left-color: #555;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+.useaadhaar-button {
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight:bold;
+  width:160px;
+  height:35px;
+  background-color:white; 
+  color:black; 
+  margin-right: 10px;
+  margin-left:2%;
+  font-weight: bold;
+}
+
+.useaadhaar-button:hover{
+  background-color:black; 
+  color:#FFD966;
+  font-weight: bold;
+}
+.viewhistoryaadhaar{
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width:108px;
+  height:35px;
+  background-color:#FFD966; 
+  color:black; 
+  margin-right: 10px;
+  margin-left:200px;
+  margin-top:-35px;
+  font-weight: bold;
+}
+
+.viewhistoryaadhaar:hover {
+  background-color:black; 
+  color:#FFD966;
+  font-weight: bold;
+}
+
+
+#aadhworkdes
+{
+  background-color:none;
+  left:20%;
+  position:absolute;
+  transform: translateX(2.8%);
+  margin:70px auto;
+  width:70%;
+  max-height: calc(100vh - 120px); 
+  overflow-y: auto; 
+  padding:20px;
+  padding-top:1%;
+  margin-top:18%;
+}
+.aadhwork{
+  text-align:left;
+  font-size: 24px;
+  font-weight: bold;
+}
+.aadh360row {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1rem; 
+  margin-top:2%;
+}
+
+
+.aadhdatasubdes{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:white;
+  flex: 1; 
+  padding:10px;
+}
+
+.aadhdatasub{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.aadhdataline {
+  border-top:2px solid black;
+  max-width:60px;
+  margin-left:3%;
+}
+.aadhdatainput{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+
+.aadhvaliddes{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:#FFFFFF ;
+  flex: 1; 
+  padding:10px;
+}
+
+.aadhvalidprocess{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.aadhvalidline {
+  border-top:2px solid black;
+  max-width:60px;
+  margin-left:3%;
+}
+.aadhsubdata{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+
+
+
+.aadhoutdes
+{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:#FFFFFF ;
+  flex: 1; 
+  padding:10px;
+}
+
+.aadhoutnot{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.aadhoutline {
+  border-top:2px solid black;
+  max-width:40px;
+  margin-left:3%;
+}
+.aadhinformed{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .aadhouter {
+    display:grid;
+    margin-bottom: 80%;
+    max-width: 100%;
+    margin: 20px 0 50px 10px; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top:8rem;
+      
+    }
+  
+  .aadhcontainer {
+    margin-bottom:60%;
+    max-width: 100%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .aadhcontainer input[type="text"],
+  .aadhcontainer button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .aadhcontainer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .aadhcontainer table td {
+    padding: 8px;
+  }
+
+  .descriptionaadh {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .download-pdf-button {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 0; 
+  }
+  
+.aadhcontainer form {
+  margin-bottom: 20px;
+}
+
+.aadhcontainer input[type="text"],
+.aadhcontainer button {
+  text-align: center;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.aadhcontainer button[type="submit"].generate-otp-button { 
+  background-color:black; 
+  width: 70%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aadhcontainer button[type="submit"].generate-otp-button:disabled { 
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.aadhcontainer button[type="submit"].generate-otp-button:hover { 
+  background-color:green; 
+}
+
+
+.aadhcontainer button.submit-otp-button { 
+  background-color:black; 
+  color: #fff;
+  cursor: pointer;
+}
+.aadhcontainer button.submit-otp-button:hover { 
+  background-color:green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aadhcontainer button.submit-otp-button:disabled {
+  background-color:green;
+  cursor: not-allowed;
+}
+
+.aadhcontainer .error {
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+.aadhcontainer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.aadhcontainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.aadhcontainer table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.aadhcontainer table td:first-child {
+  font-weight: bold;
+  color:black;
+  width: 30%;
+  background-color: #f4f4f4; 
+}
+
+
+.download-pdf-button {
+  background-color: #28a745; 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transform:translateY(-190px);
+  margin-left:15px;
+}
+.download-pdf-button:hover {
+  background-color: #218838;
+}
+
+
+#pan360banner h3 {
+  left: 10%;
+  font-size: 16px;
+  margin-top: 0;
+  transform: translateY(-21px);
+}
+#pan360banner {
+height:900px;
+margin-top:100px;
+display: flex;
+flex-direction: column;
+gap:1rem;
+}
+
+#backimg360 {
+  width: 80%; 
+  height: auto; 
+  margin: 0px auto;
+  left: 5%;
+  transform: translateX(0%);
+}
+
+.verifytext {
+  font-size:0.9rem;
+}
+.verifypara p{
+   font-size:0.7rem;
+}
+
+#aadhworkdes {
+  display:flex;
+  flex-direction: column;
+  margin:12rem -3rem;
+  padding-left:2rem;
+}
+
+.aadhwork {
+  font-size:1.2rem;
+  margin-left:-1rem;
+}
+
+.aadh360row {
+  display:flex;
+  flex-direction: column;
+  margin:-2rem -5rem;
+  padding:3rem;
+}
+
+.aadhworkdes {
+  display:flex;
+  flex-direction:column;
+}
+
+
+#aadhaarbox
+{
+  max-width:100%;
+  padding: 20px;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow:none;
+  position: relative;
+  overflow-y: auto;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-29px;
+}
+
+
+#aadhaarverify{
+  background-color:white;
+  padding-top:3%;
+  max-width:90%;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .aadhouter {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 60px auto;
+    left: 50%;
+    transform: translateX(4%);
+    margin-bottom: 600px;
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headingaadh {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .button {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .verification-table {
+    margin-top: 20px;
+  }
+
+  .verification-table table {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #pan360banner {
+  display:flex;
+  gap:2rem;
+  transform:translateX(10%);
+  }
+
+     
+  #pan360banner h3 {
+    transform:translateY(-1rem);
+    margin-left:-80px;
+     }
+
+  #backimg360 {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    left: 10%;
+    transform: translateX(0%);
+  }
+
+  .verifytext {
+    font-size: 1.1rem;
+    margin-top: 2%;
+  }
+
+  .verifypara p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  #aadhworkdes {
+    margin:13rem 0;
+    padding: 20px;
+    left: 10%;
+    transform: translateX(0%);
+  }
+
+  .aadhwork {
+    font-size: 22px;
+  }
+
+  .aadh360row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .aadhdatasubdes, .aadhvaliddes, .aadhoutdes {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aadhouter {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 60px auto;
+    left: 50%;
+    transform: translateX(4%);
+    margin-bottom: 600px;
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headingaadh {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .button {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .verification-table {
+    margin-top: 20px;
+  }
+
+  .verification-table table {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #pan360banner {
+  display:flex;
+  gap:2rem;
+  transform:translateX(10%);
+  }
+
+     
+  #pan360banner h3 {
+    transform:translateY(-1rem);
+    margin-left:-80px;
+     }
+
+
+  #backimg360 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    left: 10%;
+    transform: translateX(0%);
+  }
+
+  .verifytext {
+    font-size: 1.1rem;
+    margin-top: 2%;
+  }
+
+  .verifypara p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  #aadhworkdes {
+    margin:13rem 0;
+    padding: 20px;
+    left: 10%;
+    transform: translateX(0%);
+  }
+
+  .aadhwork {
+    font-size: 22px;
+  }
+
+  .aadh360row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .aadhdatasubdes, .aadhvaliddes, .aadhoutdes {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
+  .aadhouter {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 70px auto;
+    left: 50%;
+    transform: translateX(4%);
+    margin-bottom:250px;
+    margin-top: 180px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headingaadh {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    width: calc(90% - 20px);
+    padding: 10px;
+  }
+
+  .button {
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  .verification-table {
+    margin-top: 20px;
+  }
+
+  .verification-table table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pan360banner {
+    height:800px;
+    margin-top: 180px;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+  }
+
+  #backimg360 {
+    width: 70%;
+    height: 240px;
+    margin: 70px auto;
+    left: 20%;
+    transform: translateX(4%);
+  }
+
+  .verifytext {
+    font-size: 24px;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+
+  .verifypara p {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: 2%;
+  }
+
+  #aadhworkdes {
+    left: 20%;
+    margin: 70px auto;
+    width: 70%;
+    padding: 20px;
+    margin-top:25rem;
+    transform: translateX(2.8%);
+  }
+
+  .aadhwork {
+    font-size: 24px;
+  }
+
+ 
+  .aadh360row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2%;
+  }
+
+  .aadhdatasubdes, .aadhvaliddes, .aadhoutdes {
+    width: 310px;
+    height: 124px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,407 @@
+header {
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #171717;
+  color: #fff;
+  height: 5rem;
+  flex-wrap: wrap;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 7px solid #FFD966;
+  z-index: 999;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 11.875rem;
+  height: auto;
+  margin-right: 20px;
+  position: absolute;
+  left:0.3rem;
+  top: 1.375rem;
+  margin-left: 7.5rem;
+}
+
+.verification-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: -4.375rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.verification-text {
+  margin: 0;
+  text-align: center;
+  top: 4.375rem;
+  left: 45%;
+  margin-left: 4%;
+  transform: translateY(75%);
+}
+
+.auth-container {
+  position: relative;
+  margin-right:5%;
+}
+
+.desktop-auth {
+  display: flex;
+}
+
+.mobile-auth {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sign-in-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.google-login-btn {
+  margin: 0.5rem;
+  padding-right: 2rem;
+}
+.sign-in-btn:hover,
+.sign-out-btn:hover {
+  background-color: #daa520; 
+  color: white;
+}
+.login-error {
+  color: #ff0000;
+  margin-top: 0.5rem;
+}
+
+.login-error-text {
+  margin: 0;
+}
+
+.login-error {
+  position: absolute;
+  top:125px;
+  left: 50%;
+  transform: translateX(-80%);
+  color: white;
+  font-weight: 700;
+  width: 380px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+  }
+
+  .sign-in-btn,
+  .sign-out-btn {
+    position:absolute; 
+    top:-20px; 
+    right: -10px; 
+  }
+ 
+  .sign-in-btn {
+    background-color: #ffd700; 
+    color: #333; 
+  }
+
+  .sign-in-btn:hover,
+.sign-out-btn:hover {
+  background-color: #daa520; 
+  color: white;
+}
+.login-error {
+  position: absolute;
+  top:125px;
+  left: 50%;
+  transform: translateX(-55%);
+  color: white;
+  font-weight: 700;
+  width:320px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
+}
+  .verification-container {
+    display: flex;
+    align-items: center;
+    margin-top: -3.25rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    transform: translateX(10%);
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+    margin: 0;
+    left: -1.13rem;
+    top: 0.5rem;
+  }
+
+  .logo {
+    width: 8.5rem;
+    height: auto;
+  } }
+@media (max-width: 600px) {
+  .logo-container {
+    width: 6rem;
+    height: auto;
+    margin-right: 1.25rem;
+    position: absolute;
+    left: 0.09rem;
+    top: 1rem;
+    margin-left: 0.8rem;
+  }
+
+  .verification-container {
+    display: flex;
+    align-items: center;
+    margin-top: -3.25rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    transform: translateX(10%);
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    gap:0.6rem;
+  }
+
+  .logo-container {
+    position: relative;
+    margin: 0;
+    top: 0.25rem;
+    margin-bottom: 23px;
+  }
+  
+ .logo {
+  width:1rem;
+  height: auto;
+}
+
+  .sign-in-icon {
+    padding-right:2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top:0.4rem;
+    transform:translateX(3rem);
+    margin-top:-5rem;
+  }
+  .verification-container {
+    justify-content: center;
+    text-align: center;
+    transform: translateX(5%);
+  
+  }
+  .mobile-auth {
+    transform:translateX(-4rem);
+    margin-top:5rem;
+  }
+  
+  .login-error {
+    position: absolute;
+    top:125px;
+    left: 50%;
+    transform: translateX(-55%);
+    color: white;
+    font-weight: 700;
+    width:320px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .sign-out-btn {
+    background-color:#FFD966; 
+    color:#171717;
+   margin:2rem 3.5rem;
+  }
+
+  .sign-in-btn,
+  .sign-out-btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    top:9%;
+    right:12.5% !important;
+  }
+
+  .sign-in-btn:hover,
+  .sign-out-btn:hover {
+    background-color: #daa520; 
+  }
+  .verification-text h1 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .sign-in-btn,
+  .sign-out-btn {
+    position:absolute; 
+    top:-20px; 
+    right: -60px; 
+  }
+
+  .sign-in-btn {
+    background-color: #ffd700; 
+    color: #333; 
+  }
+
+  .logo {
+    position: relative;
+    margin: 0;
+    left: -1.13rem;
+    top: 0.5rem;
+    width: 7.5rem;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .verification-container {
+    position: relative;
+    top: unset;
+    left: -1.875rem;
+    margin-top: 0;
+    text-align: center;
+    flex-grow: 1;
+    padding:1rem;
+  }
+
+  .verification-text {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: translateY(0%);
+  }
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+ 
+  .header-container {
+    display: flex;
+    flex-direction:row;
+    gap:2rem;
+  }
+
+  .logo-container {
+    width: 6rem;
+    height: auto;
+    margin-right: 1.25rem;
+    position: absolute;
+    left: 0.09rem;
+    top: 1rem;
+    margin-left: 0.8rem;
+  }
+
+  .verification-container {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    transform: translateX(40%);
+  
+  }
+
+  
+.login-error {
+  position: absolute;
+  top:125px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 700;
+  width: 380px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
+}
+  .sign-in-btn,
+  .sign-out-btn {
+    position:absolute; 
+    top:-20px; 
+    right: -10px; 
+  }
+ 
+  .sign-in-btn {
+    background-color: #ffd700; 
+    color: #333; 
+  }
+
+  .sign-in-btn:hover,
+.sign-out-btn:hover {
+  background-color: #daa520; 
+  color: white;
+}
+}
+
+
+@media (min-width: 1025px) {
+
+.login-error {
+  position: absolute;
+  top:125px;
+  left: 50%;
+  transform: translateX(-80%);
+  color: white;
+  font-weight: 700;
+  width: 380px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
+}
+}

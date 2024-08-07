@@ -1,0 +1,306 @@
+#introductioncont
+{
+background-color:#FAFAFA;
+padding:20px;
+margin-bottom:160px; 
+left:20%;
+margin-top:120px;
+min-height:100vh;
+}
+
+#offerbox
+{
+ margin-top: 40px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+
+}
+
+#offerhead{
+    font-size:24px;
+    font-weight:600;
+    color:#171717;
+}
+#expdet{
+    font-size:16px;
+    width:800px;
+    margin: 10px auto; 
+    text-align: center;
+    color: #4D4D4D;
+    font-weight: normal;
+    padding:20px;
+}
+
+#pancardrow{
+    display: flex;
+    flex-direction: row;
+    gap:64px;
+    justify-content: center;
+    margin-top:2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+#pancardbox{
+    width:400px;
+    height:402px;
+    border: 3px solid #171717;
+    border-radius:20px;
+    transition: border-bottom-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
+}
+#pancardbox:hover {
+    border-bottom:13px solid #171717;
+    border-right:13px solid #171717;
+}
+#panverifyhead{
+    color: #171717;
+    width:230px;
+    font-weight:600;
+    font-size:20px;
+    margin-left:12%;
+    border-left:3px solid #FBAF00;
+    margin-top:-6%;
+    padding-left:3%;
+}
+#panverifytext{
+    color:#4D4D4D;
+    font-size:14px;
+    margin:15px;
+    margin-left:11.45%;
+    text-align: left;
+}
+
+.pancardman{
+    width: 256px;
+    height:144px;
+    margin:40px;
+    margin-top:50px;
+}
+#effortborder
+{
+    width:400px;
+    height:402px;
+    border: 3px solid #171717;
+    border-radius:20px;
+    transition: border-bottom-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
+}
+#effortborder:hover {
+    border-bottom:13px solid #171717;
+    border-right:13px solid #171717;
+}
+.aadhaarthumbicon{
+    width: 223.3px;
+    height:144px;
+    margin:40px;
+    margin-top:50px;
+}
+#efforthead 
+{    color: #171717;
+    width:230px;
+    font-weight:600;
+    font-size:20px;
+    margin-left:12%;
+    border-left:3px solid #FBAF00;
+    margin-top:-6%;
+    padding-left:3%;
+
+}
+#effortdet
+{
+    color:#4D4D4D;
+    font-size:14px;
+    margin:15px;
+    margin-left:11.45%;
+    text-align: left;
+}
+
+#solhead{
+    font-size:24px;
+    font-weight:600;
+    color:#171717;
+  }
+
+
+
+  @media (max-width: 480px) {
+#introductioncont {
+  margin-top:-5rem;
+}
+
+#offerbox
+{
+padding:1rem;
+display:flex;
+flex-direction: column;
+margin-right: auto;
+margin-left:auto;
+width:320px;
+justify-content: center;
+align-items:center;
+text-align: center;
+}
+
+#expdet
+   {
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin-right: auto;
+margin-left:-4rem;
+    width:330px;
+    text-align: center;
+    padding:2rem;
+    justify-content: center;
+align-items:center;
+text-align: center;
+   }
+
+
+   #pancardrow{
+    display: flex;
+    width:250px;
+    flex-direction:column;
+    gap:10px;
+    justify-content: center;
+    margin-top:2.5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+#pancardbox{
+    width:330px;
+    height:380px;
+    border: 3px solid #171717;
+    border-radius:20px;
+    transition: border-bottom-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
+}
+
+#effortborder
+{
+    width:330px;
+    height:380px;
+    border: 3px solid #171717;
+    border-radius:20px;
+    transition: border-bottom-width 0.3s ease-in-out, border-right-width 0.3s ease-in-out;
+}
+.pancardman{
+    width: 256px;
+    height:144px;
+    margin:40px;
+    margin-top:50px;
+}
+
+  #soldes1{
+    font-size:0.9rem;
+    width:350px;
+    margin: 0.625rem auto; 
+    text-align: center;
+    color: #4D4D4D;
+    font-weight: normal;
+    padding:0.1rem;
+    margin-left:-70%;
+  }
+  }
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #expdet {
+      width: 80%;
+    }
+    
+    #pancardbox, #effortborder {
+      width: 90%;
+      height: auto;
+    }
+  
+    .pancardman, .aadhaarthumbicon {
+      width: 80%;
+      height: auto;
+    }
+  
+    #panverifyhead, #efforthead {
+      width: 90%;
+      font-size: 18px;
+      margin-left: 5%;
+    }
+  
+    #panverifytext, #effortdet {
+      font-size: 16px;
+      margin-left: 5%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #expdet {
+      width: 70%;
+    }
+    
+    #pancardbox, #effortborder {
+      width: 80%;
+      height: auto;
+    }
+  
+    .pancardman, .aadhaarthumbicon {
+      width: 75%;
+      height: auto;
+    }
+  
+    #panverifyhead, #efforthead {
+      width: 80%;
+      font-size: 18px;
+      margin-left: 10%;
+    }
+    #instantrow {
+        width:83%;
+        margin:0 auto;
+    }
+    #panverifytext, #effortdet {
+      font-size: 16px;
+      margin-left: 10%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    #expdet {
+      width:70%;
+    }
+    
+    #pancardbox, #effortborder {
+      width: 400px;
+      height: 402px;
+    }
+
+  
+    .pancardman, .aadhaarthumbicon {
+      width: 256px;
+      height: 144px;
+    }
+  
+    #panverifyhead, #efforthead {
+      width: 270px;
+      font-size: 20px;
+      margin-left: 12%;
+    }
+  
+    #panverifytext, #effortdet {
+      font-size: 14px;
+      margin-left: 11.45%;
+    }
+
+    #solbox {
+      width:50%;
+    }
+  }

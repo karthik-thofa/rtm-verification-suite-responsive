@@ -1,0 +1,45 @@
+
+.message-modal {
+    position: fixed;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .message-modal.success {
+    background-color: #fddd7e; 
+    box-shadow: 0 2px 2px #ffe596(76, 175, 80, 0.4); 
+  }
+  
+  .message-modal.error {
+    background-color: #eb190a; 
+    box-shadow: 0 2px 2px rgba(255, 17, 0, 0.4); 
+  }
+  
+  .message-content {
+    margin-bottom: 10px;
+    font-size: 18px; 
+    font-weight: bold;
+    color: #000000; 
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 23px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #eee;
+  }
+  

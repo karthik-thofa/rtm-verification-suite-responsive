@@ -1,0 +1,162 @@
+
+
+#salesservice {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width:70%;
+    text-align: left;
+    justify-content: flex-start;
+    margin-right:50px;
+  }
+  .closeimage{
+    width:48px;
+    height:48px ;
+  }
+  #salesimagebox {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom:40px;
+    margin-top:38px;
+  }
+  .contact-form {
+    width: 500px;
+    height:732px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width:450px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:#FAFAFA;
+    border-radius:10px;
+    padding-left:20px;
+    height:50px;
+    margin-bottom:20px;
+  }
+  
+  .contact-form input[type="message"],
+  .contact-form textarea {
+    width:450px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:#FAFAFA;
+    border-radius:10px;
+    padding-left:20px;
+    height:136px;
+    margin-bottom:20px;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #666666;
+    font-size:12px;
+    font-weight: 600;
+  }
+  
+  
+  .contact-form button[type="submit"] {
+    background-color: #FFD966;
+    color: #171717;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width:400px;
+    height:50px;
+    font-size:16px;
+    font-weight: 600;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color:black;
+    color:yellow;
+  }
+
+
+  #formfooter{
+    width:480px;
+    background-color:black;
+   border-bottom-left-radius:10px;
+   border-bottom-right-radius:10px;
+   justify-content:center;
+   align-items:center;
+   margin-top:60px;
+   margin-left: -20px;
+   padding:30px;
+   position:fixed;
+  }
+
+  .form-powered-by{
+   color:white;
+  }
+
+ 
+
+.form-powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #powtext {
+    margin-right: 20px;
+  }
+  
+  .footer-logo-form{
+  width:200px;
+  height:35.06px;
+  margin-top:5px;
+  }
+
+  #salesinfo{
+  font-weight:600;
+  font-size:16px;
+  color: white;
+  justify-content: center;
+  align-items: center
+  }
+.imagemessage {
+    display: grid;
+    place-items: center;
+  }
+  .submitted-message{
+    color:black;
+    font-size:16px;
+    margin-bottom:-13px;
+    background-color:#E6E6E6;
+    border-radius:10px;
+    padding:20px;
+    width:400px;
+  }
+
+  .thumbsup{
+    width:300px;
+    height:300px;
+    margin-bottom:50px;
+  }
+

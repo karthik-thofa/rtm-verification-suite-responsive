@@ -1,0 +1,1736 @@
+
+#bodycontainer {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding-top:5rem;
+  margin-top:5rem;
+}
+
+#streamrow {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:3.125rem;
+
+}
+
+#streamdes{
+  display: block;
+  max-width:34.375rem;
+  height:15.375rem;
+  text-align: left;
+  margin-bottom:3.125rem;
+}
+
+
+#streamhead {
+  font-size:2rem;
+  max-width:90%;
+  font-weight:bold;
+  color:#171717;
+}
+
+.rightarrowfr1{
+  width:1.188rem;
+  height:1.188rem;
+  margin-bottom:-3px;
+}
+
+
+#streamdetail
+{
+  font-size:1rem;
+  color:#4D4D4D;
+  margin:0.625rem auto;
+  font-size: medium;
+}
+
+
+.identity {
+  color: #FBAF00;
+}
+.clickme {
+  background-color:#FFD966;
+  color: black; 
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer; 
+  font-size: 16px; 
+  border-radius:10px; 
+  margin-top:3%;
+}
+
+
+.streamImage{
+  width:37.5rem;
+  height:25rem;
+}
+
+
+#solbox {
+  margin-top:3.75rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding:1rem;
+}
+
+#solhead{
+  font-size:1.5rem;
+  font-weight:600;
+  color:#171717;
+}
+#soldes{
+  font-size:1rem;
+  width:50rem;
+  margin: 0.625rem auto; 
+  text-align: center;
+  color: #4D4D4D;
+  font-weight: normal;
+  padding:1.25rem;
+}
+#instantrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:4rem;
+  margin-top:1%;
+}
+#instabox{
+  width:25rem;
+  height:31.5rem;
+  border: 3px solid #171717;
+  border-radius:1.25rem;
+}
+.lockimage{
+  width:18.75rem;
+  height:18.75rem;
+  margin:2.5rem;
+}
+#verifyh{
+  color: #171717;
+  width:12.5rem;
+  font-weight:600;
+  font-size:1.25rem;
+  margin-left:12%;
+  border-left:3px solid #FBAF00;
+  margin-top:-6%;
+  padding-left:3%;
+}
+#verifytext
+{
+  color:#4D4D4D;
+  font-size:14px;
+  margin:15px;
+  margin-left:11.45%;
+  text-align: left;
+}
+#govtborder
+{
+  width:25rem;
+  height:504px;
+  border: 3px solid #171717;
+  border-radius:1.5rem;
+}
+.govtintegimage
+{
+  width:18.75rem;
+  height:18.75rem;
+  margin:2.5rem;
+}
+#govtapi{
+  color: #171717;
+  width:18.75rem;
+  font-weight:600;
+  font-size:1.25rem;
+  margin-left:12%;
+  border-left:3px solid #FBAF00;
+  margin-top:-6%;
+  padding-left:3%;
+}
+#govtapitext{
+  color:#4D4D4D;
+  font-size:0.875rem;
+  margin:0.938rem;
+  margin-left:11.45%;
+  text-align: left;
+}
+
+
+
+#secrow{
+  display: flex;
+  flex-direction: row;
+  gap:4rem;
+  justify-content: center;
+  margin-top:2.5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.secureimage{
+  width:18.75rem;
+  height:18.75rem;
+  margin:2.5rem;
+}
+#secboxborder
+{
+  width:25rem;
+  height:31.5rem;
+  border: 3px solid #171717;
+  border-radius:1.25rem;
+}
+#sechead
+{
+  color: #171717;
+  width:14.375rem;
+  font-weight:600;
+  font-size:1.25rem;
+  margin-left:12%;
+  border-left:3px solid #FBAF00;
+  margin-top:-6%;
+  padding-left:3%;
+}
+#securetext
+{
+  color:#4D4D4D;
+  font-size:0.875rem;
+  margin:0.938rem;
+  margin-left:11.45%;
+  text-align: left;
+}
+
+#secboxborder{
+  width:400px;
+  height:504px;
+  border: 3px solid #171717;
+  border-radius:20px;
+}
+#userborder{
+  width:25rem;
+  height:31.5rem;
+  border: 3px solid #171717;
+  border-radius:1.25rem;
+}
+.userfrndimage{
+  width:18.75rem;
+  height:18.75rem;
+  margin:2.5rem;
+}
+#frndhead{
+  color: #171717;
+  width:14.375rem;
+  font-weight:600;
+  font-size:1.25rem;
+  margin-left:12%;
+  border-left:3px solid #FBAF00;
+  margin-top:-6%;
+  padding-left:3%;
+
+}
+#frndtext{
+  color:#4D4D4D;
+  font-size:0.875rem;
+  margin:0.938rem;
+  margin-left:11.45%;
+  text-align: left;
+}
+
+
+#powerrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  gap: 50px;
+}
+
+.unlockimage{
+  width: 500px;
+  height: 338px;
+  margin:40px;
+}
+#unlockhead{
+  font-size: 32px;
+  max-width:90%;
+  font-weight:bold;
+  color:#171717;
+}
+#redydes{
+  font-size:16px;
+  color:#4D4D4D;
+  margin:10px auto;
+  font-size: medium;
+}
+#powerdes{
+  display: block;
+  max-width:34.375rem;
+  height:15.375rem;
+  text-align: left;
+  margin-bottom:3.125rem;
+}
+#unloackbox
+{
+  font-size:2rem;
+  max-width:90%;
+  font-weight:bold;
+  color:#171717;
+}
+.hi-clickme {
+  background-color:#FFD966;
+  color: black; 
+  border: none; 
+  padding: 0.625rem 1.25rem;
+  cursor: pointer; 
+  font-size: 1rem; 
+  border-radius:0.313rem; 
+  margin-top:3%;
+  margin-left: 0;
+}
+
+.rightarrowfr1{
+  width:1.188rem;
+  height:1.188rem;
+  margin-bottom:-0.188rem;
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+}
+
+.modal-main {
+  position: fixed;
+  background-color:none;
+  width: 50%; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+
+@media (max-width:480px) {
+
+  #bodycontainer {
+  padding-top:8rem;
+  padding-left:0.7rem;
+  }
+  #streamrow {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  #streamdes {
+      width:100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+  }
+
+  #streamhead {
+      font-size: 1.25rem;
+      width:100%;
+  }
+
+  #streamdetail {
+      font-size: 0.75rem;
+  }
+
+  .streamImage {
+      width: 100%;
+      height: auto;
+  }
+
+  .clickme {@media (min-width: 481px) and (max-width: 768px) {
+
+  #bodycontainer {
+    padding-top: 7rem;
+  }
+  
+  #streamrow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #streamdes {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  #streamhead {
+    font-size: 1.75rem;
+    width: 80%;
+  }
+
+  #streamdetail {
+    font-size: 0.875rem;
+  }
+
+  .streamImage {
+    width: 80%;
+    height: auto;
+  }
+
+  .clickme {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #171717;
+    width: 400px;
+  }
+
+  #soldes {
+    font-size: 0.9rem;
+    width: 400px;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 0.1rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+  }
+
+  #instabox {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #verifyh {
+    font-size: 1.2rem;
+  }
+
+  #verifytext {
+    font-size: 0.85rem;
+  }
+
+  #govtborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #govtapi {
+    font-size: 1.2rem;
+  }
+
+  #govtapitext {
+    font-size: 0.85rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+  }
+
+  .secureimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #secboxborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.2rem;
+  }
+
+  #securetext {
+    font-size: 0.85rem;
+  }
+
+  #userborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #frndhead {
+    font-size: 1.2rem;
+  }
+
+  #frndtext {
+    font-size: 0.85rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+    padding: 1.5rem;
+  }
+
+  #powerdes {
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .unlockimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 85%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.2rem;
+  }
+
+  #redydes {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  #bodycontainer {
+    padding-top: 6rem;
+  }
+  
+  #streamrow {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  #streamdes {
+    width: 75%;
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  #streamhead {
+    font-size: 1.75rem;
+    width: 75%;
+  }
+
+  #streamdetail {
+    font-size: 0.9rem;
+  }
+
+  .streamImage {
+    width: 75%;
+    height: auto;
+  }
+
+  .clickme {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #171717;
+    width: 450px;
+  }
+
+  #soldes {
+    font-size: 1rem;
+    width: 450px;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 0.1rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+  }
+
+  #instabox {
+    width: 85%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #verifyh {
+    font-size: 1.3rem;
+  }
+
+  #verifytext {
+    font-size: 0.9rem;
+  }
+
+  #govtborder {
+    width: 85%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #govtapi {
+    font-size: 1.3rem;
+  }
+
+  #govtapitext {
+    font-size: 0.9rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+  }
+
+  .secureimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #secboxborder {
+    width: 85%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.3rem;
+  }
+
+  #securetext {
+    font-size: 0.9rem;
+  }
+
+  #userborder {
+    width: 85%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #frndhead {
+    font-size: 1.3rem;
+  }
+
+  #frndtext {
+    font-size: 0.9rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+    padding: 2rem;
+  }
+
+  #powerdes {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .unlockimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 80%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.3rem;
+  }
+
+  #redydes {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  #bodycontainer {
+    padding-top: 5rem;
+  }
+  
+  #streamrow {
+    flex-direction: row;
+    gap: 3.125rem;
+  }
+
+  #streamdes {
+    max-width: 34.375rem;
+    height: 15.375rem;
+    margin-bottom: 3.125rem;
+  }
+
+  #streamhead {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  #streamdetail {
+    font-size: 1rem;
+  }
+
+  .streamImage {
+    width: 37.5rem;
+    height: 25rem;
+  }
+
+  .clickme {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #171717;
+  }
+
+  #soldes {
+    font-size: 1rem;
+    width: 50rem;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 1.25rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1%;
+  }
+
+  #instabox {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #verifyh {
+    font-size: 1.25rem;
+  }
+
+  #verifytext {
+    font-size: 14px;
+  }
+
+  #govtborder {
+    width: 25rem;
+    height: 504px;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #govtapi {
+    font-size: 1.25rem;
+  }
+
+  #govtapitext {
+    font-size: 0.875rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2.5%;
+  }
+
+  .secureimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #secboxborder {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.25rem;
+  }
+
+  #securetext {
+    font-size: 0.875rem;
+  }
+
+  #userborder {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #frndhead {
+    font-size: 1.25rem;
+  }
+
+  #frndtext {
+    font-size: 0.875rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .unlockimage {
+    width: 500px;
+    height: 338px;
+    margin: 40px;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 90%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.25rem;
+  }
+
+  #redydes {
+    font-size: medium;
+  }
+}
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  
+#solbox {
+  margin-top:3.75rem;
+  max-width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding:1rem;
+}
+
+#solhead{
+  font-size:1rem;
+  font-weight:600;
+  color:#171717;
+  width:344px;
+}
+#soldes{
+  font-size:0.9rem;
+  width:350px;
+  margin: 0.625rem auto; 
+  text-align: center;
+  color: #4D4D4D;
+  font-weight: normal;
+  padding:0.1rem;
+  margin-left:-75%;
+}
+#instantrow{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin-top:1%;
+}
+#instabox{
+  width:99%;
+  height:auto;
+  border-radius:1.25rem;
+}
+.lockimage{
+  width:18.75rem;
+  height:auto;
+  margin:2.5rem auto;
+}
+#verifyh{
+
+  font-size:1.1rem;
+
+}
+#verifytext
+{
+  
+  font-size:0.8rem;
+
+}
+#govtborder
+{
+  width:99%;
+  height:auto;
+  border-radius:1.5rem;
+}
+.govtintegimage
+{
+  width:18.75rem;
+  height:auto;
+  margin:2.5rem auto;
+}
+#govtapi{
+
+  font-size:1.1rem;
+
+}
+#govtapitext{
+  font-size:0.8rem;
+}
+
+
+
+#secrow{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin-top:1%;
+}
+
+.secureimage{
+  width:18.75rem;
+  height:auto;
+  margin:2.5rem auto;
+}
+#secboxborder{
+  width:99%;
+  height:auto;
+  border-radius:1.25rem;
+}
+
+#sechead {
+  font-size:1.1rem;
+}
+
+#securetext {
+  font-size:0.8rem;
+}
+
+
+#userborder{
+  width:99%;
+  height:auto;
+  border-radius:1.25rem;
+}
+.userfrndimage{
+  width:18.75rem;
+  height:auto;
+  margin:2.5rem auto;
+}
+#frndhead{
+  font-size:1.1rem;
+
+}
+#frndtext{
+  font-size:0.8rem;
+}
+
+
+#powerrow {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin-top:1%;
+  padding:1rem;
+}
+#powerdes{
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.unlockimage {
+  width:18.75rem;
+  height:auto;
+  margin:2.5rem auto;
+}
+#unloackbox
+{
+  font-size:2rem;
+  max-width:90%;
+  font-weight:bold;
+  color:#171717;
+}
+
+#unlockhead {
+  font-size:1.1rem;
+}
+ 
+#redydes {
+  font-size:0.8rem;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  #bodycontainer {
+    padding-top: 7rem;
+  }
+  
+  #streamrow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #streamdes {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  #streamhead {
+    font-size: 1.75rem;
+    width: 80%;
+  }
+
+  #streamdetail {
+    font-size: 0.875rem;
+  }
+
+  .streamImage {
+    width: 80%;
+    height: auto;
+  }
+
+  .clickme {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #171717;
+    width: 400px;
+  }
+
+  #soldes {
+    font-size: 0.9rem;
+    width: 400px;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 0.1rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+  }
+
+  #instabox {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #verifyh {
+    font-size: 1.2rem;
+  }
+
+  #verifytext {
+    font-size: 0.85rem;
+  }
+
+  #govtborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #govtapi {
+    font-size: 1.2rem;
+  }
+
+  #govtapitext {
+    font-size: 0.85rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+  }
+
+  .secureimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #secboxborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.2rem;
+  }
+
+  #securetext {
+    font-size: 0.85rem;
+  }
+
+  #userborder {
+    width: 90%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #frndhead {
+    font-size: 1.2rem;
+  }
+
+  #frndtext {
+    font-size: 0.85rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5%;
+    padding: 1.5rem;
+  }
+
+  #powerdes {
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .unlockimage {
+    width: 20rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 85%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.2rem;
+  }
+
+  #redydes {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  #bodycontainer {
+    padding-top: 6rem;
+  }
+  
+  #streamrow {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  #streamdes {
+    width: 75%;
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  #streamhead {
+    font-size: 1.75rem;
+    width: 75%;
+  }
+
+  #streamdetail {
+    font-size: 0.9rem;
+  }
+
+  .streamImage {
+    width: 75%;
+    height: auto;
+  }
+
+  .clickme {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #171717;
+    width: 450px;
+  }
+
+  #soldes {
+    font-size: 1rem;
+    width: 450px;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 0.1rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+  }
+
+  #instabox {
+    width: 85%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #verifyh {
+    font-size: 1.3rem;
+  }
+
+  #verifytext {
+    font-size: 0.9rem;
+  }
+
+  #govtborder {
+    width: 85%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #govtapi {
+    font-size: 1.3rem;
+  }
+
+  #govtapitext {
+    font-size: 0.9rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+  }
+
+  .secureimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #secboxborder {
+    width: 70%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.3rem;
+  }
+
+  #securetext {
+    font-size: 0.9rem;
+  }
+
+  #userborder {
+    width:70%;
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #frndhead {
+    font-size: 1.3rem;
+  }
+
+  #frndtext {
+    font-size: 0.9rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+    padding: 2rem;
+  }
+
+  #powerdes {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .unlockimage {
+    width: 22rem;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 80%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.3rem;
+  }
+
+  #redydes {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  #bodycontainer {
+    padding-top: 5rem;
+  }
+  
+  #streamrow {
+    flex-direction: row;
+    gap: 3.125rem;
+  }
+
+  #streamdes {
+    max-width: 34.375rem;
+    height: 15.375rem;
+    margin-bottom: 3.125rem;
+  }
+
+  #streamhead {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  #streamdetail {
+    font-size: 1rem;
+  }
+
+  .streamImage {
+    width: 37.5rem;
+    height: 25rem;
+  }
+
+  .clickme {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  #solbox {
+    margin-top: 3.75rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #solhead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #171717;
+  }
+
+  #soldes {
+    font-size: 1rem;
+    width: 50rem;
+    margin: 0.625rem auto;
+    text-align: center;
+    color: #4d4d4d;
+    font-weight: normal;
+    padding: 1.25rem;
+  }
+
+  #instantrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1%;
+  }
+
+  #instabox {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .lockimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #verifyh {
+    font-size: 1.25rem;
+  }
+
+  #verifytext {
+    font-size: 14px;
+  }
+
+  #govtborder {
+    width: 25rem;
+    height: 504px;
+    border-radius: 1.5rem;
+  }
+
+  .govtintegimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #govtapi {
+    font-size: 1.25rem;
+  }
+
+  #govtapitext {
+    font-size: 0.875rem;
+  }
+
+  #secrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2.5%;
+  }
+
+  .secureimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #secboxborder {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  #sechead {
+    font-size: 1.25rem;
+  }
+
+  #securetext {
+    font-size: 0.875rem;
+  }
+
+  #userborder {
+    width: 25rem;
+    height: 31.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .userfrndimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.5rem;
+  }
+
+  #frndhead {
+    font-size: 1.25rem;
+  }
+
+  #frndtext {
+    font-size: 0.875rem;
+  }
+
+  #powerrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .unlockimage {
+    width: 500px;
+    height: 338px;
+    margin: 40px;
+  }
+
+  #unloackbox {
+    font-size: 2rem;
+    max-width: 90%;
+    font-weight: bold;
+    color: #171717;
+  }
+
+  #unlockhead {
+    font-size: 1.25rem;
+  }
+
+  #redydes {
+    font-size: medium;
+  }
+}

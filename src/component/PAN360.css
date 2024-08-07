@@ -1,0 +1,943 @@
+
+
+.panouter1 {
+  display: flex;
+  justify-content: center; 
+  max-width: 70%;
+  margin: 70px auto; 
+  left:50%; 
+  transform: translateX(04%); 
+ margin-bottom:250px; 
+  margin-top:180px;
+ align-items:center;
+ text-align: center;
+}
+
+.heading1 h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color:black;
+  font-size:24px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+  
+  
+}
+#panbox
+{
+  padding-top:3%;
+  background-color:white;
+  max-width:100%;
+  height:130px;
+  top:-5%;
+  border-radius:10px;
+}
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0000;
+  font-size: 16px;
+}
+
+.input {
+  width: calc(90% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+.button {
+  width:70%;
+  padding: 10px;
+  background-color:black; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color:#FFD966;
+  color:#171717;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.verification-table {
+  margin-top:05px;
+  background-color:WHITE;
+  
+}
+
+.verification-table h3 {
+  margin-bottom: 10px;
+  padding-top:1%;
+  color:black;
+
+}
+
+.verification-table table {
+  width:450px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #CCCCCC;
+}
+
+.verification-table table td {
+  padding: 8px;
+  border: none;
+  background-color:white;
+  text-align: left;
+}
+
+.verification-table table td:first-child {
+  font-weight: bold;
+  background-color:#EDEDED;
+  text-align: left;
+}
+
+.download-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #218838; 
+}
+
+.download-button.loading {
+  background-color: #218838; 
+}
+
+
+.description1 {
+  background-color:none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.description1 p {
+  margin-bottom: 10px;
+  justify-content: center;
+  line-height:1.3;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; 
+ 
+}
+
+.left-arrow {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-left: -14px;
+  
+}
+
+.back-link {
+  position: absolute;
+  top: -8%;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 140px;
+}
+
+.back-link span {
+  margin-left: 5px;
+  color:black;
+  font-size:18px;
+  font-weight: bold;
+}
+
+.go-back-container {
+  position:fixed;
+  top:-28px; 
+  left:-2%; 
+}
+
+
+#pan360banner h3 {
+  position: absolute;
+  left:23%; 
+  transform: translateY(10px);
+  color: black;
+  font-size:24px;
+  margin-top:-20px;
+}
+
+#pan360banner{
+  background-color:#FAFAFA;
+  height:900px; 
+  margin-top:180px;
+}
+#backimg360 {
+  position:absolute;
+  width:70%;
+  height:240px; 
+  background-size: cover;
+  background-position: center;
+  margin: 70px auto;
+  left:20%; 
+  border-radius: 20px;
+  transform: translateX(04%); 
+  flex-wrap: wrap;
+  margin-top:40px;
+}
+
+.backimg360-container {
+  display: flex;
+  flex-direction: column;
+  line-height:16px;
+  padding: 20px;
+  color: white; 
+}
+
+.verifytext {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align:left ;
+  width: auto;
+  margin-top:3%;
+  margin-left:2%;
+}
+
+.verifypara {
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align:left ;
+  margin-left:0%;
+  margin-top:12px ;
+}
+.verifypara p {
+  line-height:1.2; 
+}
+.pan360-button {
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight:bold;
+  width:95px;
+  height:35px;
+  background-color:white; 
+  color:black; 
+  margin-right: 10px;
+  margin-left:2%;
+  font-weight: bold;
+}
+
+.pan360-button:hover{
+  background-color:black; 
+  color:#FFD966;
+  font-weight: bold;
+}
+
+.viewhistory {
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width:108px;
+  height:35px;
+  background-color:#FFD966; 
+  color:black; 
+  margin-right: 10px;
+  margin-left:150px;
+  margin-top:-35px;
+  font-weight: bold;
+}
+.viewhistory:hover {
+  background-color:black; 
+  color:#FFD966;
+  font-weight: bold;
+}
+
+#panworkdes
+{
+  background-color:none;
+  left:20%;
+  position:absolute;
+  transform: translateX(2.8%);
+  margin:70px auto;
+  width:70%;
+  max-height: calc(100vh - 120px); 
+  overflow-y: auto; 
+  padding:20px;
+  padding-top:1%;
+  margin-top:18%;
+}
+.panwork{
+  text-align:left;
+  font-size: 24px;
+  font-weight: bold;
+}
+.pan360row {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1rem; 
+  margin-top:2%;
+}
+
+
+.datasubdes{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:white;
+  flex: 1; 
+  padding:10px;
+}
+
+.datasub{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.dataline {
+  border-top:2px solid black;
+  max-width:60px;
+  margin-left:3%;
+}
+.datainput{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+
+.validdes{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:#FFFFFF ;
+  flex: 1; 
+  padding:10px;
+}
+
+.validprocess{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.validline {
+  border-top:2px solid black;
+  max-width:60px;
+  margin-left:3%;
+}
+.subdata{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+
+.outdes
+{
+  width: 310px;
+  height:124px;
+  border-radius:10px;
+  background-color:#FFFFFF ;
+  flex: 1; 
+  padding:10px;
+}
+.outnot{
+  font-weight:bold;
+  font-size:16px;
+  text-align: left;
+  color: black;
+  padding:10px;
+  margin-top:2%;
+}
+.outline {
+  border-top:2px solid black;
+  max-width:60px;
+  margin-left:3%;
+}
+.informed{
+  font-weight:normal;
+  font-size:13px;
+  text-align: left;
+  color: #4D4D4D;
+  padding:10px;
+  margin-top:2%;
+}
+  @media (max-width: 480px) {
+    .panouter1 {
+      display:grid;
+      margin-bottom: 80%;
+      max-width: 100%;
+      margin: 20px 0 50px 10px; 
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-top:8rem;
+    }
+
+    .container1 {
+      margin-bottom:51rem;
+      max-width: 100%;
+      padding: 10px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  
+  
+  .heading1 {
+    font-size: 20px;
+  }
+
+  .input {
+    width: calc(100% - 40px);
+  }
+
+  .button {
+    width: calc(100% - 40px);
+    margin-top: 10px;
+  }
+
+  .button:hover {
+    background-color: green;
+  }
+
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+
+  .verification-table {
+    margin-top: 20px;
+  }
+
+  .verification-table h3 {
+    margin-bottom: 10px;
+  }
+
+  .verification-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .verification-table table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .verification-table table td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .download-button:hover {
+    background-color: #218838; 
+  }
+
+  .download-button.loading {
+    background-color: #218838; 
+  }
+
+
+  .description1 {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .description1 p {
+   
+  }
+  #pan360banner h3 {
+    left: 10%;
+    font-size: 16px;
+    margin-top: 0;
+    transform: translateY(5px);
+  }
+  #pan360banner {
+  height:900px;
+  margin-top:100px;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  }
+ 
+  #backimg360 {
+    width: 80%; 
+    height: auto; 
+    margin: 0px auto;
+    left: 5%;
+    transform: translateX(0%);
+  }
+  
+  .verifytext {
+    font-size:0.9rem;
+  }
+  .verifypara p{
+     font-size:0.7rem;
+  }
+
+  #panworkdes {
+    display:flex;
+    flex-direction: column;
+    margin:12rem -3rem;
+    padding-left:2rem;
+  }
+
+  .panwork {
+    font-size:1.2rem;
+    margin-left:-1rem;
+  }
+
+  .pan360row {
+    display:flex;
+    flex-direction: column;
+    margin:-2rem -5rem;
+    padding:3rem;
+  }
+
+  .datasubdes {
+    display:flex;
+    flex-direction:column;
+  }
+  }
+
+/*
+  @media (min-width: 481px) and (max-width: 768px)
+  @media (min-width: 769px) and (max-width: 1024px)
+  @media (min-width: 1025px)  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    .panouter1 {
+      display: flex;
+      justify-content: center;
+      max-width: 80%;
+      margin: 60px auto;
+      left: 50%;
+      transform: translateX(4%);
+      margin-bottom: 600px;
+      margin-top: 150px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .heading1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .input {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    .button {
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .verification-table {
+      margin-top: 20px;
+    }
+  
+    .verification-table table {
+      width: 90%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    #pan360banner {
+    display:flex;
+    gap:2rem;
+    transform:translateX(10%);
+    }
+
+       
+    #pan360banner h3 {
+      transform:translateY(-1.4rem);
+      transform:translateX(-5.4rem);
+       }
+  
+    #backimg360 {
+      width: 75%;
+      height: auto;
+      margin: 0 auto;
+      left: 10%;
+      transform: translateX(0%);
+    }
+  
+    .verifytext {
+      font-size: 1.1rem;
+      margin-top: 2%;
+    }
+  
+    .verifypara p {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  
+    #panworkdes {
+      margin:13rem 0;
+      padding: 20px;
+      left: 10%;
+      transform: translateX(0%);
+    }
+  
+    .panwork {
+      font-size: 22px;
+    }
+  
+    .pan360row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .datasubdes, .validdes, .outdes {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+
+    /*
+    .panouter1 {
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+      max-width: 90%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 6rem;
+    }
+  
+    .heading1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .input {
+      width: calc(100% - 40px);
+      padding: 8px;
+    }
+  
+    .button {
+      width: 90%;
+      margin-top: 10px;
+    }
+  
+    .verification-table {
+      margin-top: 20px;
+    }
+  
+    .verification-table table {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    #pan360banner {
+      height: 1000px;
+      margin-top: 120px;
+      padding: 20px;
+      margin:10rem;
+    }
+
+    
+    #pan360banner h3 {
+   transform:translateY(-0.9rem);
+    }
+  
+    #backimg360 {
+      width:25rem;
+      height: auto;
+      margin: 0 auto;
+      left: 5%;
+      transform: translateX(8%);
+    }
+  
+    .verifytext {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .verifypara p {
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+  
+    #panworkdes {
+      margin: 10rem 0;
+      padding: 10px;
+      left: 10%;
+      transform: translateX(0%);
+    }
+  
+    .panwork {
+      margin-top:2rem;
+      font-size: 20px;
+    }
+  
+    .pan360row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .datasubdes, .validdes, .outdes {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    */
+    
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .panouter1 {
+      display: flex;
+      justify-content: center;
+      max-width: 80%;
+      margin: 60px auto;
+      left: 50%;
+      transform: translateX(4%);
+      margin-bottom: 600px;
+      margin-top: 150px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .heading1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .input {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    .button {
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .verification-table {
+      margin-top: 20px;
+    }
+  
+    .verification-table table {
+      width: 90%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    #pan360banner {
+    display:flex;
+    gap:2rem;
+    transform:translateX(10%);
+    }
+
+       
+    #pan360banner h3 {
+      transform:translateY(-1.2rem);
+      transform:translateX(-5.4rem);
+       }
+  
+    #backimg360 {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      left: 10%;
+      transform: translateX(0%);
+    }
+  
+    .verifytext {
+      font-size: 1.1rem;
+      margin-top: 2%;
+    }
+  
+    .verifypara p {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  
+    #panworkdes {
+      margin:13rem 0;
+      padding: 20px;
+      left: 10%;
+      transform: translateX(0%);
+    }
+  
+    .panwork {
+      font-size: 22px;
+    }
+  
+    .pan360row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .datasubdes, .validdes, .outdes {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .panouter1 {
+      display: flex;
+      justify-content: center;
+      max-width: 70%;
+      margin: 70px auto;
+      left: 50%;
+      transform: translateX(4%);
+      margin-bottom:80px;
+      margin-top: 180px;
+      align-items: center;
+      text-align: center;
+    }
+    .container1 {
+      margin-bottom:600px;
+    }
+    .heading1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .input {
+      width: calc(90% - 20px);
+      padding: 10px;
+    }
+  
+    .button {
+      width: 70%;
+      margin-top: 10px;
+    }
+  
+    .verification-table {
+      margin-top: 20px;
+      
+    }
+  
+    .verification-table table {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #pan360banner {
+      height:800px;
+      margin-top: 180px;
+      display:flex;
+      flex-direction: column;
+      gap:2rem;
+    }
+  
+    #backimg360 {
+      width: 70%;
+      height: 240px;
+      margin: 70px auto;
+      left: 20%;
+      transform: translateX(4%);
+    }
+  
+    .verifytext {
+      font-size: 24px;
+      margin-top: 3%;
+      margin-left: 2%;
+    }
+  
+    .verifypara p {
+      font-size: 12px;
+      margin-top: 12px;
+      margin-left: 2%;
+    }
+  
+    #panworkdes {
+      left: 20%;
+      margin: 70px auto;
+      width: 70%;
+      padding: 20px;
+      margin-top:25rem;
+      transform: translateX(2.8%);
+    }
+  
+    .panwork {
+      font-size: 24px;
+    }
+  
+    .pan360row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2%;
+    }
+  
+    .datasubdes, .validdes, .outdes {
+      width: 310px;
+      height: 124px;
+      margin-bottom: 10px;
+    }
+  }
+  

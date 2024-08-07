@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
+  padding:0;
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: #FAFAFA;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#bodycontainer {
+  padding-top: 8rem;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sign-out-btn {
+  position: absolute; 
+  top: 40px; 
+  right:130px; 
+}
+
+.sign-in-btn {
+  background-color: #ffd700; 
+  color: #333; 
+}
+
+.sign-out-btn {
+  background-color: #FFD966; 
+  color: #fff;
+  margin-right: 10px; 
+  width:139px;
+  height:43px;
+  border-radius:10px;
+  font-size:18px;
+  font-weight:600;
+  position:fixed;
+  z-index:1000;
+}
+
+.sign-in-btn,
+.sign-out-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  color:black;
+}
+
+
+
+
+.google-login-container {
+  position:fixed;
+  top: 38px;
+  right:7%;
+  max-width:20%;
+  z-index:1000;
+}
+.google-login-container:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.5); 
+}
+
+.invalid-login {
+  position: absolute;
+  top:125px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
+  font-weight: 700;
+  width: 380px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@media (max-width: 480px) {
+
+
+  .connect-cont {
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+  }
+
+  
+  
+/*
+  .connect-cont > * {
+    column-gap:50rem; 
+  }   */
+
+  .invalid-login{
+    color:white;
+    margin-left:10%;
+    margin-top:30px;
+    font-weight:700;
+    width:380px;
+    padding:20px;
+    border-radius:5px;
+    background-color:red;
+  }
+  .google-login-container {
+    position: absolute;
+    top:9%;
+    right:-20%;
+    max-width:28%;
+  }
+  .qJTHM {
+    margin-right:-20%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media (max-width: 768px) {
+
+
+  .google-login-btn {
+    background-color: #4285f4;
+    max-width:100%; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .google-login-btn:hover {
+    background-color: #357ae8; 
   }
+  .google-login-container{
+    background-color: #4285f4;
+    max-width:100%; 
+  }
+
+  .S9gUrf-YoZ4jf:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 2.5, 255, 2.5); 
+  }
+  .google-login-container {
+    position: absolute;
+    top:9%;
+    right: 20%;
+    max-width:28%;
+  }
+  .google-login-container:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 2.5, 255, 2.5);
+  }
+  .invalid-login{
+    color:white;
+    margin-left:10%;
+    margin-top:30px;
+    font-weight:700;
+    width:380px;
+    padding:20px;
+    border-radius:5px;
+    background-color:red;
+  }
+  
+  
 }
+
+
+/*
+@media (min-width: 481px) and (max-width: 767px) {
+
+.connect-cont {
+  display: flex;
+  flex-direction:row;
+  row-gap:10rem;
+}
+} */

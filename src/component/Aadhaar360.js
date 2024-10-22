@@ -6,7 +6,7 @@ import Aadhaar360PDF from './Aadhaar360PDF.js';
 import LoadingIndicator from "./LoadingIndicator.js";
 import leftArrowImage from "./picture/leftarrow.png";
 import landImage from './picture/landimg.png';
-
+import axios from 'axios';
 const Aadhaar360 = () => {
   const [aadhaarNumber, setAadhaarNumber] = useState(localStorage.getItem("aadhaarNumber") || '');
   const [otp, setOtp] = useState(localStorage.getItem("otp") || '');
@@ -17,7 +17,8 @@ const Aadhaar360 = () => {
   const [aadhaarSubmitted, setAadhaarSubmitted] = useState(localStorage.getItem("aadhaarSubmitted") === "true");
   const [token, setToken] = useState(localStorage.getItem('accessToken') || '');
   const [showComponent, setShowComponent] = useState(localStorage.getItem("showComponent") === "true");
-
+  const [errorMessage, setErrorMessage] = useState("");
+  const [response, setResponse] = useState(null);
   useEffect(() => {
     localStorage.setItem("showComponent", showComponent);
   }, [showComponent]);
@@ -69,24 +70,28 @@ const Aadhaar360 = () => {
       const token = localStorage.getItem('accessToken');
       setLoading(true);
 
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}aadhaar/generateotp`, {
-        method: 'POST',
-        referrerPolicy: "unsafe-url",
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({ aadhaar_number: aadhaarNumber })
-      });
+     
+      const response = await axios.post(
+        `${process.env.REACT_APP_BASE_URL}aadhaar/generateotp`,
+        { aadhaar_number: aadhaarNumber },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          referrerPolicy: 'unsafe-url'
+        }
+      );
 
-      if (!response.ok) {
-        const errorResponse = await response.json();
-        throw new Error(errorResponse.message || 'Failed to generate OTP');
-      }
 
-      const data = await response.json();
-      if (data.status === 'OK' && data.content && data.content.refId) {
-        setRefId(data.content.refId);
+      //if (!response.ok) {
+      //  const data = response.data;
+//throw new Error(errorResponse.message || 'Failed to generate OTP');
+     // }
+
+      const data = response.data;
+      if (data.status === 'SUCCESS' && data.refId) {
+        setRefId(data.refId);
         setAadhaarSubmitted(true);
       } else {
         throw new Error('Failed to generate OTP');
@@ -98,40 +103,46 @@ const Aadhaar360 = () => {
       setLoading(false);
     }
   };
-
   const handleSubmitOtp = async (event) => {
     event.preventDefault();
+    setLoading(true);
+  
     try {
       const token = localStorage.getItem('accessToken');
       setLoading(true);
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}aadhaar/submit`, {
-        method: 'POST',     
-        referrerPolicy: "unsafe-url",
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({ otp: otp, ref_id: refId })
-      });
 
-      if (!response.ok) {
-        const errorResponse = await response.json();
-        throw new Error(errorResponse.message || 'Failed to submit OTP');
-      }
+      const response = await axios.post(
+        `${process.env.REACT_APP_BASE_URL}aadhaar/submit`,
+        { otp: otp, ref_id: refId },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+          referrerPolicy: 'unsafe-url'
+        }
+      );
 
-      const data = await response.json();
-      if (data.status === 'OK' && data.content) {
-        setVerificationResult(data.content);
-      } else {
-        throw new Error('Failed to verify OTP');
-      }
-    } catch (error) {
-      console.error('Error submitting OTP:', error);
-      setError('Failed to verify OTP. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
+    // if (!response.ok) {
+     //   const errorResponse = await response.json();
+     //   throw new Error(errorResponse.message || 'Failed to submit OTP');
+     // }
+
+     if (response.data && response.data.status === "VALID") {
+    
+      setResponse(response.data);
+      console.log("OTP Verified successfully:", response.data);
+  } else {
+    
+      setErrorMessage("Failed to verify OTP.");
+  }
+} catch (error) {
+  setErrorMessage("Error submitting OTP: " + error.message);
+  console.error("Error submitting OTP:", error);
+} finally {
+  setLoading(false); 
+}
+};
 
   const handleHideComponent = () => {
     setShowComponent(false); 
@@ -146,10 +157,13 @@ const Aadhaar360 = () => {
   };
 
   const generatePDF = () => {
-    const fileName = `${aadhaarNumber}_${verificationResult.name}.pdf`;
+    if (!response || !response.name) {
+      return null; 
+    }
+    const fileName = `${aadhaarNumber}_${response.name}.pdf`;
   
     return (
-      <PDFDownloadLink document={<Aadhaar360PDF verificationResult={verificationResult} aadhaarNumber={aadhaarNumber} />} fileName={fileName}>
+      <PDFDownloadLink document={<Aadhaar360PDF verificationResult={response} aadhaarNumber={aadhaarNumber} />} fileName={fileName}>
         {({ loading }) => (
           loading ? (
             <button className="download-pdf-button" disabled>Loading document...</button>
@@ -210,7 +224,7 @@ const Aadhaar360 = () => {
               </form>
             )}
         
-            {verificationResult && (
+        {response && response.name &&  (
               <div id="aadhaarbox">
                 <div className='aadhaartable'>
                   <h2>Verification Result</h2>
@@ -222,27 +236,27 @@ const Aadhaar360 = () => {
                       </tr>
                       <tr>
                         <td>Name:</td>
-                        <td>{verificationResult.name}</td>
+                        <td>{response.name}</td>
                       </tr>
                       <tr>
                         <td>Guardian's Name:</td>
-                        <td>{verificationResult.careOf}</td>
+                        <td>{response.careOf}</td>
                       </tr>
                       <tr>
                         <td>Reference ID:</td>
-                        <td>{verificationResult.refId}</td>
+                        <td>{response.refId}</td>
                       </tr>
                       <tr>
                         <td>Gender:</td>
-                        <td>{verificationResult.gender}</td>
+                        <td>{response.gender}</td>
                       </tr>
                       <tr>
                         <td>DOB:</td>
-                        <td>{verificationResult.dob}</td>
+                        <td>{response.dob}</td>
                       </tr>
                       <tr>
                         <td>Email:</td>
-                        <td>{verificationResult.email}</td>
+                        <td>{response.email}</td>
                       </tr>
                       <tr>
                         <td>Mobile Number:</td>
@@ -250,27 +264,27 @@ const Aadhaar360 = () => {
                       </tr>
                       <tr>
                         <td>Valid:</td>
-                        <td>{verificationResult.status === 'VALID' ? 'Yes' : 'No'}</td>
+                        <td>{response.status === 'VALID' ? 'Yes' : 'No'}</td>
                       </tr>
                       <tr>
                         <td>Message:</td>
-                        <td>{verificationResult.message}</td>
+                        <td>{response.message}</td>
                       </tr>
                       <tr>
                         <td>Address:</td>
-                        <td>{verificationResult.address}</td>
+                        <td>{response.address}</td>
                       </tr>
                       <tr>
                         <td>Photo:</td>
                         <td>
-                          {verificationResult.photoLink && (
-                            <img src={`data:image/jpeg;base64,${verificationResult.photoLink}`} alt="Verification Photo" />
+                          {response.photoLink && (
+                            <img src={`data:image/jpeg;base64,${response.photoLink}`} alt="Verification Photo" />
                           )}
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                  {verificationResult && generatePDF()}
+                  {response && generatePDF()}
                   {error && <p className="error">{error}</p>}
                 </div>
               </div>

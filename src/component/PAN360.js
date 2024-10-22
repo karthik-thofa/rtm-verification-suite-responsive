@@ -5,7 +5,7 @@ import LoadingIndicator from "./LoadingIndicator";
 import "./PAN360.css";
 import leftArrowImage from "./picture/leftarrow.png";
 import landImage from './picture/landimg.png';
-
+import axios from "axios";
 
 const PAN360 = () => {
   const [panNumber, setPanNumber] = useState(localStorage.getItem("panNumber") || "");
@@ -14,67 +14,61 @@ const PAN360 = () => {
   const [verificationData, setVerificationData] = useState(JSON.parse(localStorage.getItem("verificationData")));
   const [token, setToken] = useState(localStorage.getItem("accessToken") || "");
   const [showComponent, setShowComponent] = useState(localStorage.getItem("showComponent") === "true");
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
     setError(null);
     setVerificationData(null);
-
+  
     try {
       if (panNumber.length !== 10) {
         throw new Error("PAN number must be exactly 10 characters");
       }
       const token = localStorage.getItem("accessToken");
       
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}pan/advance`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          pan: panNumber,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch data");
-      }
-
-      const data = await response.json();
-
-      if (!data.content || !data.content.registeredName) {
+      const response = await axios.post(
+        `${process.env.REACT_APP_BASE_URL}pan/advance`,
+        { pan: panNumber },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+  
+      const data = response.data;
+  
+      if (!data || data.status !== "VALID") {
+        console.log("Invalid PAN data received: ", data);
         throw new Error("Invalid PAN number or data not found");
       }
-
-      const isValid = data.content.valid !== undefined ? data.content.valid : true;
-
+  
       const verifiedData = {
         panNumber: panNumber,
-        name: data.content.registeredName,
-        namePANCard: data.content.namePANCard || "-",
-        referenceId: data.content.referenceId || "-",
-        type: data.content.type || "-",
-        nameProvided: data.content.nameProvided || "-",
-        valid: isValid,
-        message: data.content.message || "PAN verified successfully",
-        gender: data.content.gender || "-",
-        dateOfBirth: data.content.dateOfBirth || "-",
-        maskedAadhaarNumber: data.content.maskedAadhaarNumber || "-",
-        email: data.content.email || "-",
-        mobileNumber: data.content.mobileNumber || "-",
-        aadhaarLinked: data.content.aadhaarLinked || false,
+        name: data.registeredName || "-",
+        namePANCard: data.namePANCard || "-",
+        referenceId: data.referenceId || "-",
+        type: data.type || "-",
+        nameProvided: data.nameProvided || "-",
+        valid: data.status === "VALID",
+        message: data.message || "PAN verified successfully",
+        gender: data.gender || "-",
+        dateOfBirth: data.dateOfBirth || "-",
+        maskedAadhaarNumber: data.maskedAadhaarNumber || "-",
+        email: data.email || "-",
+        mobileNumber: data.mobileNumber || "-",
+        aadhaarLinked: data.aadhaarLinked ? "Yes" : "No",
         address: {
-          fullAddress: data.content.address.fullAddress || "-",
-          street: data.content.address.street || "-",
-          city: data.content.address.city || "-",
-          state: data.content.address.state || "-",
-          pincode: data.content.address.pincode || "-",
-          country: data.content.address.country || "India",
+          fullAddress: data.address.fullAddress || "-",
+          street: data.address.street || "-",
+          city: data.address.city || "-",
+          state: data.address.state || "-",
+          pincode: data.address.pincode || "-",
+          country: data.address.country || "India",
         },
       };
-
+  
       setVerificationData(verifiedData);
       localStorage.setItem("verificationData", JSON.stringify(verifiedData));
       setShowComponent(true);
@@ -85,7 +79,6 @@ const PAN360 = () => {
       setLoading(false);
     }
   };
-
   const handleHideComponent = () => {
     setShowComponent(false);
     localStorage.setItem("showComponent", false);

@@ -109,7 +109,32 @@ const Dashboard = ({ hideIntroduction }) => {
             </div>
             {isPANDropdownOpen && isExpanded && (
               <ul className="dropdown" onClick={handleDropdownClick}>
-                <li>
+                 <li>
+        <Link
+          to="/basicpan"
+          style={{
+            backgroundColor: selectedLink === "/basicpan" ? "#FFD966" : "",
+            width: "120px",
+            borderRadius: "8px",
+            height: "40px",
+            position: "absolute",
+            display: "block",
+            top: "100%",
+            transform: "translate(0%, -50%)",
+            left: "50%",
+            textAlign: "center",
+            lineHeight: "40px",
+            marginTop: "50px", 
+            marginLeft: "-57px",
+            fontWeight: selectedLink === "/basicpan" ? "bold" : "",
+            color: selectedLink === "/basicpan" ? "#000000" : "#ffffff",
+          }}
+          onClick={() => handleLinkClick("/basicpan")}
+        >
+          Basic PAN
+        </Link>
+      </li>
+                  <li>
                   <Link
                     to="/pan360"
                     style={{
@@ -124,7 +149,7 @@ const Dashboard = ({ hideIntroduction }) => {
                       left: "50%",
                       textAlign: "center",
                       lineHeight: "40px",
-                      marginTop: "25px",
+                      marginTop: "65px",
                       marginLeft: "-57px",
                       fontWeight: selectedLink === "/pan360" ? "bold" : "",
                       color: selectedLink === "/pan360" ? "#000000" : "#ffffff",

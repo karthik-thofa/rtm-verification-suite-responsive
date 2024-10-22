@@ -9,6 +9,7 @@ import valueedit from "./priceimage/valueedit.png";
 import DatePicker from "react-datepicker";
 import MessageModal from './MessageModal';
 import "react-datepicker/dist/react-datepicker.css";
+import axios from "axios";
 const PriceUpdates = () => {
   const [goldRate, setGoldRate] = useState("");
   const [silverRate, setSilverRate] = useState("");
